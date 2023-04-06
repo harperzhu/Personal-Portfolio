@@ -1880,3 +1880,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+li .resume{
+  color: white;
+}
+
+.introduction-line{
+  font-size: small;font-weight: normal;
+  color:white
+}
