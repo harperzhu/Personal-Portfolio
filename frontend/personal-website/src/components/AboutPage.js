@@ -17,7 +17,7 @@ export default function AboutPage() {
 
           <section class="about-text">
             <p>
-              I'm a professional Software Engineer and developer with 1 years of
+              I'm a professional Software Engineer and developer with 3 years of
               experience in creating websites and developing application
             </p>
 

@@ -54,20 +54,6 @@ export default function Resume() {
                   Implementation, Data Structures and Algorithms
                 </p>
               </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  High school of art and design
-                </h4>
-
-                <span>2002 — 2004</span>
-
-                <p class="timeline-text">
-                  Duis aute irure dolor in reprehenderit in voluptate, quila
-                  voluptas mag odit aut fugit, sed consequuntur magni dolores
-                  eos.
-                </p>
-              </li>
             </ol>
           </section>
 
@@ -136,30 +122,31 @@ export default function Resume() {
                 </h4>
 
                 <span>Sep 2020 – Dec 2020</span>
-
-                <ul>
-                  <li class="resume">
-                    {" "}
-                    - Built a COVID-19 data visualization web app to visualize
-                    the spread of the pandemic on campus using R, Shiny to
-                    promote mask-wearing behavior.{" "}
-                  </li>
-                  <br />
-                  <li class="resume">
-                    -Simulated interpersonal interactions among 10,000+ students
-                    living on campus using the network model to identify 5
-                    potential disease hotspots and correct intervention
-                    strategies{" "}
-                  </li>
-                  <br />
-                  <li class="resume">
-                    - Customized models to include off-campus interactions to
-                    simulate the transmission process based on the SIR model and
-                    stability analysis that improved the accuracy of disease
-                    modeling by 53%
-                  </li>
-                  <br />
-                </ul>
+                <p class="timeline-text">
+                  <ul>
+                    <li class="resume">
+                      {" "}
+                      - Built a COVID-19 data visualization web app to visualize
+                      the spread of the pandemic on campus using R, Shiny to
+                      promote mask-wearing behavior.{" "}
+                    </li>
+                    <br />
+                    <li class="resume">
+                      -Simulated interpersonal interactions among 10,000+
+                      students living on campus using the network model to
+                      identify 5 potential disease hotspots and correct
+                      intervention strategies{" "}
+                    </li>
+                    <br />
+                    <li class="resume">
+                      - Customized models to include off-campus interactions to
+                      simulate the transmission process based on the SIR model
+                      and stability analysis that improved the accuracy of
+                      disease modeling by 53%
+                    </li>
+                    <br />
+                  </ul>
+                </p>
               </li>
             </ol>
           </section>
@@ -212,67 +199,76 @@ export default function Resume() {
 
               {/* <!-- campus map --> */}
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Campus Map</h4>
-                <em class="introduction-line">
-                  {" "}
-                  Full Stack Pathfinding web application{" "}
-                </em>
+                <h4 class="h4 timeline-item-title">
+                  Campus Map
+                  <em class="introduction-line">
+                    {" "}
+                    Full Stack Pathfinding web application
+                  </em>
+                </h4>
 
                 <span>Jun 2020 – Aug 2020</span>
 
-                <ul>
-                  <li class="resume">
-                    {" "}
-                    - Designed and developed a full-stack interactive college
-                    map to provide navigation using Java and JavaScript{" "}
-                  </li>
-                  <br />
-                  <li class="resume">
-                    -Developed a Spark Java server to provide RESTful API
-                    endpoints for querying data from the React frontend
-                    application.{" "}
-                  </li>
-                  <br />
-                  <li class="resume">
-                    -Implemented Dijkstra's Algorithm to improve navigation
-                    efficiency and enhance user experience.
-                  </li>
-                  <br />
-                  <li class="resume">
-                    -Implemented test-suite including script test and Junit test
-                    to achieve 97% code coverage to ensure reliability
-                  </li>
-                  <br />
-                </ul>
+                <p class="timeline-text">
+                  <ul>
+                    <li class="resume">
+                      {" "}
+                      - Designed and developed a full-stack interactive college
+                      map to provide navigation using Java and JavaScript{" "}
+                    </li>
+                    <br />
+                    <li class="resume">
+                      -Developed a Spark Java server to provide RESTful API
+                      endpoints for querying data from the React frontend
+                      application.{" "}
+                    </li>
+                    <br />
+                    <li class="resume">
+                      -Implemented Dijkstra's Algorithm to improve navigation
+                      efficiency and enhance user experience.
+                    </li>
+                    <br />
+                    <li class="resume">
+                      -Implemented test-suite including script test and Junit
+                      test to achieve 97% code coverage to ensure reliability
+                    </li>
 
+                    <br />
+                  </ul>
+                </p>
                 {/* <!-- Stack Smashing Exploits --> */}
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Stack Smashing Exploits</h4>
-                <em class="introduction-line">
-                  {" "}
-                  Investigate Cybersecurity Leaks{" "}
-                </em>
+                <h4 class="h4 timeline-item-title">
+                  Stack Smashing Exploits
+                  <em class="introduction-line">
+                    {" "}
+                    Investigate Cybersecurity Leaks{" "}
+                  </em>
+                </h4>
 
                 <span> Aug 2022 – Dec 2022</span>
 
-                <ul>
-                  <li class="resume">
-                    {" "}
-                    - Acquired knowledge of software security vulnerabilities
-                    and best practices through buffer overflow exploitation in C{" "}
-                  </li>
-                  <br />
-                  <li class="resume">
-                    -Enhanced software security by enabling ASLR to randomize
-                    the memory location of system components to prevent
-                    return-into-libc exploits from gaining root shell access{" "}
-                  </li>
-                  <br />
+                <p class="timeline-text">
+                  <ul>
+                    <li class="resume">
+                      {" "}
+                      - Acquired knowledge of software security vulnerabilities
+                      and best practices through buffer overflow exploitation in
+                      C{" "}
+                    </li>
+                    <br />
+                    <li class="resume">
+                      -Enhanced software security by enabling ASLR to randomize
+                      the memory location of system components to prevent
+                      return-into-libc exploits from gaining root shell access{" "}
+                    </li>
+                    <br />
 
-                  <br />
-                </ul>
+                    <br />
+                  </ul>
+                </p>
               </li>
             </ol>
           </section>
