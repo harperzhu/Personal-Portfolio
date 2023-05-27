@@ -10,6 +10,10 @@ export default function Blog() {
           <h2 class="h2 article-title">Blog</h2>
         </header>
 
+        {/* <div className="blog-updates">
+          <p className="blog-updates-text">Stay tuned for blog updates</p>
+        </div> */}
+
         <section class="blog-posts">
           <ul class="blog-posts-list">
             <li class="blog-post-item">

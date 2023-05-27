@@ -9,7 +9,12 @@ export default function Contact() {
   const navigate = useNavigate();
 
   const goForward = () => {
-    navigate("/contact/messagereceived");
+    if (document.querySelector("form").checkValidity()) {
+      navigate("/contact/messagereceived");
+    } else {
+      // Handle form validation errors
+      setEmailError("Please fill in all required fields.");
+    }
   };
 
   const validateEmail = () => {

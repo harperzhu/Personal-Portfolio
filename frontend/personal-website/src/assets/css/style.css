@@ -2,14 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
   /**
      * colors
@@ -1207,6 +1199,17 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+.blog-updates {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.blog-updates-text {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /*-----------------------------------*\
