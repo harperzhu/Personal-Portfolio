@@ -3,12 +3,14 @@ import designIcon from "../assets/images/icon-design.svg";
 import appIcon from "../assets/images/icon-app.svg";
 import photoIcon from "../assets/images/icon-photo.svg";
 import devIcon from "../assets/images/icon-dev.svg";
+import NavBar from "./NavBar";
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="overall-container">
       <>
         <article class="about  active" data-page="about">
+          <NavBar />
           <header>
             <h2 class="h2 article-title">About me</h2>
           </header>
