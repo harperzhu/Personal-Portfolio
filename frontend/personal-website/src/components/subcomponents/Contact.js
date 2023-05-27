@@ -1,7 +1,34 @@
 import React from "react";
 import NavBar from "../NavBar";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const navigate = useNavigate();
+
+  const goForward = () => {
+    navigate("/contact/messagereceived");
+  };
+
+  const validateEmail = () => {
+    var validRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email.match(validRegex)) {
+      // Valid email address
+      setEmailError("");
+    } else if (email === "") {
+      setEmailError("Email is empty!");
+    } else {
+      // Invalid email address
+      setEmailError("Invalid email address!");
+    }
+  };
+  function handleEmailBlur(e) {
+    validateEmail(e.target.value);
+  }
+
   return (
     <div className="overall-container">
       <NavBar />
@@ -32,7 +59,7 @@ export default function Contact() {
                 type="text"
                 name="fullname"
                 className="form-input"
-                placeholder="Full name"
+                placeholder="Example Name"
                 required
                 data-form-input
               />
@@ -41,10 +68,16 @@ export default function Contact() {
                 type="email"
                 name="email"
                 className="form-input"
-                placeholder="Email address"
+                placeholder="example@domain.com"
                 required
                 data-form-input
+                value={email}
+                onBlur={handleEmailBlur}
+                onChange={(e) => setEmail(e.target.value)}
               />
+              {emailError && (
+                <p className="email-error-message">{emailError}</p>
+              )}
             </div>
 
             <textarea
@@ -55,9 +88,14 @@ export default function Contact() {
               data-form-input
             ></textarea>
 
-            <button className="form-btn" type="submit" disabled data-form-btn>
+            <button
+              className="form-btn"
+              onClick={goForward}
+              type="submit"
+              data-form-btn
+            >
               {/* <ion-icon name="paper-plane"></ion-icon> */}
-              <span>Send Message</span>
+              <span>Send Message </span>
             </button>
           </form>
         </section>

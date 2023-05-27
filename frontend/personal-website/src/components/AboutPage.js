@@ -17,13 +17,21 @@ export default function AboutPage() {
 
           <section class="about-text">
             <p>
-              I'm a professional Software Engineer and developer with 3 years of
-              experience in creating websites and developing application
+              I am a software engineer with 3 years of professional experience,
+              working with Handshake and leading startups to build and deploy
+              applications for production systems. Leveraging my skills in
+              scalable application development, With expertise in building
+              scalable systems and backend applications, leveraging
+              technologies, and a deep passion for understanding user needs and
+              spearheading end-to-end website initiatives, I am eager to explore
+              both software engineering and product management to drive
+              comprehensive solutions.
             </p>
 
             <p>
-              Currently, I am completing my Master's degree in Information
-              Science at Cornell Tech.
+              Currently, I am pursuing my Master's degree in Information Science
+              at Cornell Tech, where I am immersed in cutting-edge research and
+              acquiring knowledge about the latest advancements in the field.
             </p>
           </section>
 
@@ -35,21 +43,6 @@ export default function AboutPage() {
             <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src={designIcon} alt="design icon" width="40" />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
-
-                  <p class="service-item-text">
-                    The most modern and high-quality design made at a
-                    professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
                   <img src={devIcon} alt="Web development icon" width="40" />
                 </div>
 
@@ -58,6 +51,22 @@ export default function AboutPage() {
 
                   <p class="service-item-text">
                     High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src={designIcon} alt="design icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Product Management</h4>
+
+                  <p class="service-item-text">
+                    Efficiently plan, develop, and launch innovative products
+                    while ensuring alignment with market needs and business
+                    goals.
                   </p>
                 </div>
               </li>

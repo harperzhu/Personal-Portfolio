@@ -13,6 +13,8 @@ import "../src/assets/css/style.css";
 import ErrorPage from "./components/ErrorPage";
 import PortfolioPage from "./components/PortfolioPage";
 import ContactPage from "./components/ContactPage";
+import MessageReceivePage from "./components/MessageReceivedPage";
+import ResumeDownloadPage from "./components/ResumeDownloadPage";
 
 function App() {
   return (
@@ -21,6 +23,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
+        <Route
+          path="/contact/messagereceived"
+          element={<MessageReceivePage />}
+        ></Route>
+        <Route path="/resume/download" element={<ResumeDownloadPage />}></Route>
         <Route path="/blog" element={<BlogPage />}></Route>
         <Route path="/portfolio" element={<PortfolioPage />}></Route>
         <Route path="/resume" element={<ResumePage />}></Route>

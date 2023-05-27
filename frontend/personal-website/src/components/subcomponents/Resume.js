@@ -1,8 +1,17 @@
 import React from "react";
 // import SideBar from "../SideBar";
 import NavBar from "../NavBar";
+import { useNavigate } from "react-router-dom";
 
 export default function Resume() {
+  const navigate = useNavigate();
+
+  const downloadResume = () => {
+    // Replace the URL with the actual file path of your resume
+    const resumeUrl = "/resume/download";
+    navigate(resumeUrl);
+  };
+
   return (
     <>
       <div className="overall-container">
@@ -11,7 +20,7 @@ export default function Resume() {
           <header>
             <h2 class="h2 article-title">Resume</h2>
           </header>
-
+          {/* EDUCATION */}
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
@@ -56,17 +65,55 @@ export default function Resume() {
               </li>
             </ol>
           </section>
-
+          {/* PROFESSIONAL EXPERIENCE  */}
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Experience</h3>
+              <h3 class="h3"> Professional Experience</h3>
             </div>
 
             <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Full Stack Engineer Intern,
+                  <br />
+                  HandShake
+                </h4>
+
+                <span>June 2023 – August 2023</span>
+
+                <p class="timeline-text">
+                  <ul>
+                    <li class="resume">
+                      {" "}
+                      * Used Ruby on Rails, React, and GraphQL to build an
+                      engaging student experience on web applications for 17
+                      million  students across the country. {" "}
+                    </li>
+                    <br />
+                    <li class="resume">
+                      * Scaling out and refactoring existing systems code in a
+                      service-oriented architecture.{" "}
+                    </li>
+                    <br />
+                    <li class="resume">
+                      * Building college recruiting tools for companies ranging
+                      from Fortune 500 to small businesses.
+                    </li>
+                    <br />
+                    <li class="resume">
+                      {" "}
+                      * Speccing, reviewing, developing, and deploying
+                      large-scale web applications safely and reliably.
+                    </li>
+                    <br />
+                  </ul>
+                </p>
+              </li>
+
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
                   Software Engineer Intern,
@@ -150,14 +197,14 @@ export default function Resume() {
               </li>
             </ol>
           </section>
-
+          {/* PERSONAL PROJECT  */}
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Academic Projects</h3>
+              <h3 class="h3">Personal Projects</h3>
             </div>
 
             <ol class="timeline-list">
@@ -272,7 +319,7 @@ export default function Resume() {
               </li>
             </ol>
           </section>
-
+          {/* SKILL BAR  */}
           <section class="skill">
             <h3 class="h3 skills-title">My skills</h3>
 
@@ -333,6 +380,15 @@ export default function Resume() {
                 </div>
               </li>
             </ul>
+          </section>
+
+          {/* // <!-- RESUME DOWNLOAD --> */}
+          <section className="resume-download">
+            <br></br>
+            <br></br>
+            <button className="resume-button form-btn" onClick={downloadResume}>
+              Download Resume
+            </button>
           </section>
         </article>
       </div>

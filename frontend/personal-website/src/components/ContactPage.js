@@ -2,7 +2,8 @@ import React from "react";
 import SideBar from "./SideBar";
 import Contact from "./subcomponents/Contact";
 import NavBar from "./NavBar";
-/*TODO: fix the styling here */
+
+/*TODO: whenever someone click submit, auto send something to my email */
 
 export default function ContactPage() {
   return (
