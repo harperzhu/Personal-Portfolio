@@ -6,9 +6,11 @@ export default function NavBar() {
     <nav class="navbar">
       <ul class="navbar-list">
         <li class="navbar-item">
-          <button class="navbar-link  active" data-nav-link>
-            About
-          </button>
+          <Link to="/">
+            <button class="navbar-link  active" data-nav-link>
+              About
+            </button>
+          </Link>
         </li>
 
         <li class="navbar-item">

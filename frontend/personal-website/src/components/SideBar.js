@@ -1,84 +1,69 @@
 import React from "react";
+import avatarImage from "../assets/images/my-avatar.jpg";
 
 export default function SideBar() {
   return (
     <>
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Harper Zhu"
-              width="80"
-            />
+      <aside className="sidebar" data-sidebar>
+        <div className="sidebar-info">
+          <figure className="avatar-box">
+            <img src={avatarImage} alt="Harper Zhu" width="80" />
           </figure>
 
-          <div class="info-content">
-            <h1 class="name" title="Richard hanrick">
+          <div className="info-content">
+            <h1 className="name" title="Harper Zhu">
               Harper Zhu
             </h1>
 
-            <p class="title">Software Engineer</p>
+            <p className="title">Software Engineer</p>
           </div>
 
-          <button class="info_more-btn" data-sidebar-btn>
+          <button className="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
 
             <ion-icon name="chevron-down"></ion-icon>
           </button>
         </div>
 
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
+        <div className="sidebar-info_more">
+          <div className="separator"></div>
 
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
+          <ul className="contacts-list">
+            <li className="contact-item">
+              <div className="icon-box">
                 <ion-icon name="mail-outline"></ion-icon>
               </div>
 
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
+              <div className="contact-info">
+                <p className="contact-title">Email</p>
 
-                <a href="mailto:harperzhu@yahoo.com" class="contact-link">
+                <a href="mailto:harperzhu@yahoo.com" className="contact-link">
                   harperzhu@yahoo.com
                 </a>
               </div>
             </li>
 
-            <li class="contact-item">
-              <div class="icon-box">
+            <li className="contact-item">
+              <div className="icon-box">
                 <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
 
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
+              <div className="contact-info">
+                <p className="contact-title">Phone</p>
 
-                <a href="tel:+1-206-697-8163" class="contact-link">
+                <a href="tel:+1-206-697-8163" className="contact-link">
                   +1 (206) 697-8163
                 </a>
               </div>
             </li>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">June 23, 1982</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
+            <li className="contact-item">
+              <div className="icon-box">
                 <ion-icon name="location-outline"></ion-icon>
               </div>
 
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
+              <div className="contact-info">
+                <p className="contact-title">Location</p>
 
                 <address>
                   New York City, New York, US / Seattle, Washington, US{" "}
@@ -87,23 +72,23 @@ export default function SideBar() {
             </li>
           </ul>
 
-          <div class="separator"></div>
+          <div className="separator"></div>
 
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link">
+          <ul className="social-list">
+            <li className="social-item">
+              <a href="#" className="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
-            <li class="social-item">
-              <a href="#" class="social-link">
+            <li className="social-item">
+              <a href="#" className="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
-            <li class="social-item">
-              <a href="#" class="social-link">
+            <li className="social-item">
+              <a href="#" className="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>

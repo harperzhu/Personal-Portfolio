@@ -1,4 +1,8 @@
 import React from "react";
+import designIcon from "../assets/images/icon-design.svg";
+import appIcon from "../assets/images/icon-app.svg";
+import photoIcon from "../assets/images/icon-photo.svg";
+import devIcon from "../assets/images/icon-dev.svg";
 
 export default function AboutPage() {
   return (
@@ -29,12 +33,7 @@ export default function AboutPage() {
             <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-              "
-                    alt="design icon"
-                    width="40"
-                  />
+                  <img src={designIcon} alt="design icon" width="40" />
                 </div>
 
                 <div class="service-content-box">
@@ -49,11 +48,7 @@ export default function AboutPage() {
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
+                  <img src={devIcon} alt="Web development icon" width="40" />
                 </div>
 
                 <div class="service-content-box">
@@ -67,11 +62,7 @@ export default function AboutPage() {
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
+                  <img src={appIcon} alt="mobile app icon" width="40" />
                 </div>
 
                 <div class="service-content-box">
@@ -86,11 +77,7 @@ export default function AboutPage() {
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
+                  <img src={photoIcon} alt="camera icon" width="40" />
                 </div>
 
                 <div class="service-content-box">
