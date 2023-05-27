@@ -7,7 +7,6 @@ import NavBar from "./NavBar";
 export default function ContactPage() {
   return (
     <div className="overall-container">
-      <NavBar />
       <body>
         <main>
           <SideBar />

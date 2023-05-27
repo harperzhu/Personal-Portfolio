@@ -7,7 +7,6 @@ import NavBar from "./NavBar";
 export default function PortfolioPage() {
   return (
     <div className="overall-container">
-      <NavBar />
       <div>
         <body>
           <main>

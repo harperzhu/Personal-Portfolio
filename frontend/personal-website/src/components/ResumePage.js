@@ -6,7 +6,6 @@ import NavBar from "./NavBar";
 export default function ResumePage() {
   return (
     <div className="overall-container">
-      <NavBar />
       <main>
         <SideBar />
         <Resume />
