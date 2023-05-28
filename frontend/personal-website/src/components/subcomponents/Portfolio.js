@@ -1,8 +1,5 @@
 import React from "react";
 import NavBar from "../NavBar";
-import project_1_img from "../../assets/images/projectImage/project-1.jpg";
-import project_2_img from "../../assets/images/projectImage/project-2.png";
-import project_3_img from "../../assets/images/projectImage/project-3.jpg";
 import portfolio_picture_1 from "../../assets/images/projectImage/portfolio-pic-1.jpg";
 import portfolio_picture_2 from "../../assets/images/projectImage/portfolio-pic-2.png";
 /* TODO: fix the sorting and data label for each project here */
