@@ -1,9 +1,10 @@
 # Personal-Portfolio
 
-![GitHub repo size]([[https://img.shields.io/github/repo-size/harperzhu/personal-portfolio]])(https://github.com/harperzhu/Personal-Portfolio))
-![GitHub stars](https://img.shields.io/github/stars/your-username/personal-website?style=social)
-![GitHub forks](https://img.shields.io/github/forks/your-username/personal-website?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/your-username?style=social)](https://twitter.com/intent/follow?screen_name=your-username)
+![GitHub repo size](https://img.shields.io/github/repo-size/harperzhu/personal-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/harperzhu/personal-portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/harperzhu/personal-portfolio?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/harperzhu?style=social)](https://twitter.com/intent/follow?screen_name=harperzhu)
+
 
 Welcome to my personal website! This website showcases my portfolio, projects, and provides information about me. It is built using modern web technologies, including HTML, CSS, and JavaScript.
 
