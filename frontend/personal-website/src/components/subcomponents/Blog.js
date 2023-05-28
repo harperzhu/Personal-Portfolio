@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../NavBar";
+import catImage from "../../assets/images/blogImage/cat.gif";
 
 export default function Blog() {
   return (
@@ -10,10 +11,19 @@ export default function Blog() {
           <h2 class="h2 article-title">Blog</h2>
         </header>
 
-        {/* <div className="blog-updates">
+        <div className="blog-updates">
           <p className="blog-updates-text">Stay tuned for blog updates</p>
-        </div> */}
-
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img src={catImage} alt="cat" />
+        </div>
+        {/* 
         <section class="blog-posts">
           <ul class="blog-posts-list">
             <li class="blog-post-item">
@@ -194,7 +204,7 @@ export default function Blog() {
               </a>
             </li>
           </ul>
-        </section>
+        </section> */}
       </article>
     </div>
   );
