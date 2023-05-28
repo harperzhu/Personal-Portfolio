@@ -19,21 +19,10 @@ Welcome to my personal website! This website showcases my portfolio, projects, a
 - Contact form to enable visitors to get in touch with me
 - Blog section for sharing insights, tutorials, and articles
 
-## Installation
-
-To run my personal website locally, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/personal-website.git
-   Open the index.html file in your preferred web browser.
-
-2. Explore the website and navigate through the different sections.
 
 
 ## Acknowledgments
 
-This personal website was inspired by the vCard Personal Portfolio template created by OriginalAuthor. I would like to express my gratitude for the inspiration and foundational work provided by the vCard repository.
+This personal website was inspired by the vCard Personal Portfolio template created by @codewithsadee. I would like to express my gratitude for the inspiration and foundational work provided by the vCard repository.
 
 
