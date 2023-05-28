@@ -1,8 +1,8 @@
 import React from "react";
 import NavBar from "../NavBar";
-import project_1_img from "../../assets/images/project-1.jpg";
-import project_2_img from "../../assets/images/project-2.png";
-import project_3_img from "../../assets/images/project-3.jpg";
+import project_1_img from "../../assets/images/projectImage/project-1.jpg";
+import project_2_img from "../../assets/images/projectImage/project-2.png";
+import project_3_img from "../../assets/images/projectImage/project-3.jpg";
 /* TODO: fix the sorting and data label for each project here */
 export default function Portfolio() {
   return (

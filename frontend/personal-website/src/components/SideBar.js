@@ -1,5 +1,5 @@
 import React from "react";
-import avatarImage from "../assets/images/my-avatar.jpg";
+import avatarImage from "../assets/images/avatar/my-avatar.jpg";
 
 export default function SideBar() {
   return (

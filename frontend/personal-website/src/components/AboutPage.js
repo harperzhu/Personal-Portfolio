@@ -1,8 +1,9 @@
 import React from "react";
-import designIcon from "../assets/images/icon-design.svg";
-import appIcon from "../assets/images/icon-app.svg";
-import photoIcon from "../assets/images/icon-photo.svg";
-import devIcon from "../assets/images/icon-dev.svg";
+import designIcon from "../assets/images/skillIcon/icon-design.svg";
+import appIcon from "../assets/images/skillIcon/icon-app.svg";
+import photoIcon from "../assets/images/skillIcon/icon-photo.svg";
+import devIcon from "../assets/images/skillIcon/icon-dev.svg";
+
 import NavBar from "./NavBar";
 
 export default function AboutPage() {
