@@ -3,10 +3,10 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/harperzhu/personal-portfolio)
 ![GitHub stars](https://img.shields.io/github/stars/harperzhu/personal-portfolio?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/harperzhu/personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/harperzhu?style=social)](https://twitter.com/intent/follow?screen_name=harperzhu)
 
 
-Welcome to my personal website! This website showcases my portfolio, projects, and provides information about me. It is built using modern web technologies, including HTML, CSS, and JavaScript.
+Welcome to my personal website! This website showcases my portfolio, projects, and provides information about me. It is built using modern web technologies, including React, HTML, and CSS.
+
 
 ## Demo
 
@@ -20,8 +20,11 @@ Welcome to my personal website! This website showcases my portfolio, projects, a
 - Contact form to enable visitors to get in touch with me
 - Blog section for sharing insights, tutorials, and articles
 
+## Contact
+If you have any questions or want to get in touch, you can reach me through the following channels:
 
-
+Email: harperzhu@yahoo.com
+LinkedIn: [linkedin.com/in/harperzhu](https://www.linkedin.com/in/harper-zhu/)
 ## Acknowledgments
 
 This personal website was inspired by the vCard Personal Portfolio template created by @codewithsadee. I would like to express my gratitude for the inspiration and foundational work provided by the vCard repository.
