@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import NavBar from "../NavBar";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const navigate = useNavigate();
+  const SERVICE_ID = process.env.SERVICE_ID;
+  const TEMPLATE_ID = process.env.TEMPLATE_ID;
+  const USER_ID = process.env.USER_ID;
 
   const goForward = () => {
     if (document.querySelector("form").checkValidity()) {
@@ -33,6 +37,20 @@ export default function Contact() {
   function handleEmailBlur(e) {
     validateEmail(e.target.value);
   }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
 
   return (
     <div className="overall-container">
@@ -58,11 +76,11 @@ export default function Contact() {
         <section className="contact-form">
           <h3 className="h3 form-title">Contact Form</h3>
 
-          <form action="#" className="form" data-form>
+          <form action="#" className="form" data-form onSubmit={sendEmail}>
             <div className="input-wrapper">
               <input
                 type="text"
-                name="fullname"
+                name="user_name"
                 className="form-input"
                 placeholder="Example Name"
                 required
@@ -71,7 +89,7 @@ export default function Contact() {
 
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 className="form-input"
                 placeholder="example@domain.com"
                 required
@@ -98,6 +116,7 @@ export default function Contact() {
               onClick={goForward}
               type="submit"
               data-form-btn
+              value="Send"
             >
               {/* <ion-icon name="paper-plane"></ion-icon> */}
               <span>Send Message </span>

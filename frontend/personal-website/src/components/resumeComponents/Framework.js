@@ -1,7 +1,5 @@
 import React from "react";
 // import SideBar from "../SideBar";
-import NavBar from "../NavBar";
-import { useNavigate } from "react-router-dom";
 import reactIcon from "../../assets/images/frameworkImage/react-icon.svg";
 import dockerIcon from "../../assets/images/frameworkImage/docker-icon.svg";
 import restAPIIcon from "../../assets/images/frameworkImage/rest-api-icon.svg";

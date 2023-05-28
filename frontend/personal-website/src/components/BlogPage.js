@@ -1,7 +1,6 @@
 import React from "react";
 import SideBar from "./SideBar";
 import Blog from "./subcomponents/Blog";
-import NavBar from "./NavBar";
 
 export default function BlogPage() {
   return (

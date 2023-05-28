@@ -1,7 +1,6 @@
 import React from "react";
 import SideBar from "./SideBar";
 import Resume from "./subcomponents/Resume";
-import NavBar from "./NavBar";
 
 export default function ResumePage() {
   return (

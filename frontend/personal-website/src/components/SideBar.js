@@ -37,8 +37,8 @@ export default function SideBar() {
               <div className="contact-info">
                 <p className="contact-title">Email</p>
 
-                <a href="mailto:harperzhu@yahoo.com" className="contact-link">
-                  harperzhu@yahoo.com
+                <a href="mailto:harperzhu99@gmail.com" className="contact-link">
+                  harperzhu99@gmail.com
                 </a>
               </div>
             </li>
@@ -75,23 +75,23 @@ export default function SideBar() {
           <div className="separator"></div>
 
           <ul className="social-list">
-            <li className="social-item">
+            {/* <li className="social-item">
               <a href="#" className="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
-            </li>
+            </li> */}
 
-            <li className="social-item">
+            {/* <li className="social-item">
               <a href="#" className="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
-            </li>
+            </li> */}
 
-            <li className="social-item">
+            {/* <li className="social-item">
               <a href="#" className="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </aside>
