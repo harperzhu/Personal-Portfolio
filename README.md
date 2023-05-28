@@ -1,6 +1,6 @@
 # Personal-Portfolio
 
-![GitHub repo size]([[https://img.shields.io/github/repo-size/your-username/personal-website](https://img.shields.io/github/repo-size/harperzhu/personal-portfolio)](https://github.com/harperzhu/Personal-Portfolio))
+![GitHub repo size]([[https://img.shields.io/github/repo-size/harperzhu/personal-portfolio]])(https://github.com/harperzhu/Personal-Portfolio))
 ![GitHub stars](https://img.shields.io/github/stars/your-username/personal-website?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/your-username/personal-website?style=social)
 [![Twitter Follow](https://img.shields.io/twitter/follow/your-username?style=social)](https://twitter.com/intent/follow?screen_name=your-username)
