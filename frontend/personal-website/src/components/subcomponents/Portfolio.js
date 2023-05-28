@@ -3,6 +3,8 @@ import NavBar from "../NavBar";
 import project_1_img from "../../assets/images/projectImage/project-1.jpg";
 import project_2_img from "../../assets/images/projectImage/project-2.png";
 import project_3_img from "../../assets/images/projectImage/project-3.jpg";
+import portfolio_picture_1 from "../../assets/images/projectImage/portfolio-pic-1.jpg";
+import portfolio_picture_2 from "../../assets/images/projectImage/portfolio-pic-2.png";
 /* TODO: fix the sorting and data label for each project here */
 export default function Portfolio() {
   return (
@@ -77,7 +79,7 @@ export default function Portfolio() {
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src={project_1_img} alt="finance" loading="lazy" />
+                  <img src={portfolio_picture_1} alt="finance" loading="lazy" />
                 </figure>
 
                 <h3 class="project-title">Finance</h3>
@@ -87,7 +89,7 @@ export default function Portfolio() {
             </li>
 
             {/* project 2 */}
-            <li
+            {/* <li
               class="project-item  active"
               data-filter-item
               data-category="web development"
@@ -105,7 +107,7 @@ export default function Portfolio() {
 
                 <p class="project-category">Web development</p>
               </a>
-            </li>
+            </li> */}
 
             {/* project 3 */}
             <li
@@ -113,13 +115,13 @@ export default function Portfolio() {
               data-filter-item
               data-category="web design"
             >
-              <a href="#">
+              <a href="https://feedme-97f21.web.app/">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src={project_3_img} alt="fundo" loading="lazy" />
+                  <img src={portfolio_picture_2} alt="finance" loading="lazy" />
                 </figure>
 
                 <h3 className="project-title">Fundo</h3>
