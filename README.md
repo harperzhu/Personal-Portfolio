@@ -1,44 +1,39 @@
-# vCard - Personal portfolio
+# My Personal Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+![GitHub repo size](https://img.shields.io/github/repo-size/your-username/personal-website)
+![GitHub stars](https://img.shields.io/github/stars/your-username/personal-website?style=social)
+![GitHub forks](https://img.shields.io/github/forks/your-username/personal-website?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/your-username?style=social)](https://twitter.com/intent/follow?screen_name=your-username)
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+Welcome to my personal website! This website showcases my portfolio, projects, and provides information about me. It is built using modern web technologies, including HTML, CSS, and JavaScript.
 
 ## Demo
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+![Website Screenshot](./screenshots/homepage.png "Website Screenshot")
 
-## Prerequisites
+## Features
 
-Before you begin, ensure you have met the following requirements:
+- Responsive design for optimal viewing on various devices
+- Portfolio section to highlight my projects and achievements
+- About Me section to provide background information and skills
+- Contact form to enable visitors to get in touch with me
+- Blog section for sharing insights, tutorials, and articles
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## Installation
 
-## Installing vCard
+To run my personal website locally, follow these steps:
 
-To install **vCard**, follow these steps:
+1. Clone the repository:
 
-Linux and macOS:
+   ```bash
+   git clone https://github.com/your-username/personal-website.git
+   Open the index.html file in your preferred web browser.
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+2. Explore the website and navigate through the different sections.
 
-Windows:
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Acknowledgments
 
-## Contact
+This personal website was inspired by the vCard Personal Portfolio template created by OriginalAuthor. I would like to express my gratitude for the inspiration and foundational work provided by the vCard repository.
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
 
-## License
-
-This project is **free to use** and does not contains any license.
