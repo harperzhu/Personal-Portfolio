@@ -1,44 +1,32 @@
-# vCard - Personal portfolio
+# Personal-Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+![GitHub repo size](https://img.shields.io/github/repo-size/harperzhu/personal-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/harperzhu/personal-portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/harperzhu/personal-portfolio?style=social)
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+
+Welcome to my personal website! This website showcases my portfolio, projects, and provides information about me. It is built using modern web technologies, including React, HTML, and CSS.
+
 
 ## Demo
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+![Website Screenshot](./screenshots/homepage.png "Website Screenshot")
 
-## Prerequisites
+## Features
 
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+- Responsive design for optimal viewing on various devices
+- Portfolio section to highlight my projects and achievements
+- About Me section to provide background information and skills
+- Contact form to enable visitors to get in touch with me
+- Blog section for sharing insights, tutorials, and articles
 
 ## Contact
+If you have any questions or want to get in touch, you can reach me through the following channels:
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+Email: harperzhu@yahoo.com
+LinkedIn: [linkedin.com/in/harperzhu](https://www.linkedin.com/in/harper-zhu/)
+## Acknowledgments
 
-## License
+This personal website was inspired by the vCard Personal Portfolio template created by @codewithsadee. I would like to express my gratitude for the inspiration and foundational work provided by the vCard repository.
 
-This project is **free to use** and does not contains any license.
+
