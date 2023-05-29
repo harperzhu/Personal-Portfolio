@@ -10,15 +10,15 @@ export default function AboutPage() {
   return (
     <div className="overall-container">
       <>
-        <article class="about  active" data-page="about">
+        <article className="about  active" data-page="about">
           <NavBar />
           <header>
-            <h2 class="h2 article-title">About me</h2>
+            <h2 className="h2 article-title">About me</h2>
           </header>
 
-          <section class="about-text">
+          <section className="about-text">
             <p>
-              I am a software engineer with 3 years of professional experience,
+              I am a software engineer with 2 years of professional experience,
               working with Handshake and leading startups to build and deploy
               applications for production systems. Leveraging my skills in
               scalable application development, With expertise in building
@@ -38,33 +38,33 @@ export default function AboutPage() {
 
           {/* - service */}
 
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
+          <section className="service">
+            <h3 className="h3 service-title">What i'm doing</h3>
 
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
+            <ul className="service-list">
+              <li className="service-item">
+                <div className="service-icon-box">
                   <img src={devIcon} alt="Web development icon" width="40" />
                 </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
+                <div className="service-content-box">
+                  <h4 className="h4 service-item-title">Web development</h4>
 
-                  <p class="service-item-text">
+                  <p className="service-item-text">
                     High-quality development of sites at the professional level.
                   </p>
                 </div>
               </li>
 
-              <li class="service-item">
-                <div class="service-icon-box">
+              <li className="service-item">
+                <div className="service-icon-box">
                   <img src={designIcon} alt="design icon" width="40" />
                 </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Product Management</h4>
+                <div className="service-content-box">
+                  <h4 className="h4 service-item-title">Product Management</h4>
 
-                  <p class="service-item-text">
+                  <p className="service-item-text">
                     Efficiently plan, develop, and launch innovative products
                     while ensuring alignment with market needs and business
                     goals.
@@ -72,30 +72,30 @@ export default function AboutPage() {
                 </div>
               </li>
 
-              <li class="service-item">
-                <div class="service-icon-box">
+              <li className="service-item">
+                <div className="service-icon-box">
                   <img src={appIcon} alt="mobile app icon" width="40" />
                 </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                <div className="service-content-box">
+                  <h4 className="h4 service-item-title">Mobile apps</h4>
 
-                  <p class="service-item-text">
+                  <p className="service-item-text">
                     Professional development of applications for iOS and
                     Android.
                   </p>
                 </div>
               </li>
 
-              <li class="service-item">
-                <div class="service-icon-box">
+              <li className="service-item">
+                <div className="service-icon-box">
                   <img src={photoIcon} alt="camera icon" width="40" />
                 </div>
 
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
+                <div className="service-content-box">
+                  <h4 className="h4 service-item-title">Photography</h4>
 
-                  <p class="service-item-text">
+                  <p className="service-item-text">
                     I make high-quality photos of any category at a professional
                     level.
                   </p>

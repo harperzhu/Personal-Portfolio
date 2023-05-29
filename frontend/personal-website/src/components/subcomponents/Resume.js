@@ -22,14 +22,14 @@ export default function Resume() {
     <>
       <div className="overall-container">
         <NavBar />
-        <article class="about  active" data-page="about">
+        <article className="about  active" data-page="about">
           <header>
-            <h2 class="h2 article-title">Resume</h2>
+            <h2 className="h2 article-title">Resume</h2>
           </header>
           <Education />
           <ProfessionExperience />
           <Projects />
-          <div class="skills-list content-card">
+          <div className="skills-list content-card">
             <SkillBar />
             <br></br>
             <br></br>

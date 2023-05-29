@@ -1,18 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import NavBar from "../NavBar";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const navigate = useNavigate();
-  const SERVICE_ID = process.env.SERVICE_ID;
-  const TEMPLATE_ID = process.env.TEMPLATE_ID;
-  const USER_ID = process.env.USER_ID;
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const USER_ID = process.env.REACT_APP_USER_ID;
+  console.log(USER_ID);
 
-  const goForward = () => {
+  const goForward = (e) => {
+    e.preventDefault();
     if (document.querySelector("form").checkValidity()) {
       navigate("/contact/messagereceived");
     } else {
@@ -22,7 +23,7 @@ export default function Contact() {
   };
 
   const validateEmail = () => {
-    var validRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let validRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (email.match(validRegex)) {
       // Valid email address
@@ -34,23 +35,66 @@ export default function Contact() {
       setEmailError("Invalid email address!");
     }
   };
+
   function handleEmailBlur(e) {
+    e.preventDefault();
     validateEmail(e.target.value);
   }
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const formRef = useRef(null);
+  const cleanupPerformedRef = useRef(false);
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
-      (result) => {
-        console.log(result.text);
+  useEffect(() => {
+    const formElement = formRef.current;
+
+    const handleFormSubmit = (e) => {
+      e.preventDefault();
+      sendEmail();
+    };
+
+    formElement.addEventListener("submit", handleFormSubmit);
+
+    return () => {
+      if (!cleanupPerformedRef.current) {
+        // Cleanup: remove the event listener
+        formElement.removeEventListener("submit", handleFormSubmit);
+        cleanupPerformedRef.current = true;
+      }
+    };
+  }, []);
+  // useEffect(() => {
+  //   const generator = () => {
+  //     emailjs.init(); // please encrypt your user id to protect against malicious attacks
+  //   };
+
+  //   generator();
+  // }, []);
+  const sendEmail = () => {
+    console.log("hey ok i am here");
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        navigate("/contact/messagereceived");
       },
-      (error) => {
-        console.log(error.text);
+      function (error) {
+        console.log("FAILED...", error);
       }
     );
   };
+
+  useEffect(() => {
+    const formElement = formRef.current;
+    document.body.appendChild(formElement);
+
+    return () => {
+      if (!cleanupPerformedRef.current) {
+        // Cleanup: remove the form from the body
+        document.body.removeChild(formElement);
+        cleanupPerformedRef.current = true;
+      }
+    };
+  }, []);
 
   return (
     <div className="overall-container">
@@ -63,8 +107,7 @@ export default function Contact() {
         <section className="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193572.47843136364!2d-74.11808636666852!3d40.70563057829406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1647611355151!5m2!1sen!2sbd
-"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193572.47843136364!2d-74.11808636666852!3d40.70563057829406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1647611355151!5m2!1sen!2sbd"
               width="600"
               height="300"
               loading="lazy"
@@ -76,7 +119,7 @@ export default function Contact() {
         <section className="contact-form">
           <h3 className="h3 form-title">Contact Form</h3>
 
-          <form action="#" className="form" data-form onSubmit={sendEmail}>
+          <form className="form" ref={formRef}>
             <div className="input-wrapper">
               <input
                 type="text"
@@ -118,8 +161,7 @@ export default function Contact() {
               data-form-btn
               value="Send"
             >
-              {/* <ion-icon name="paper-plane"></ion-icon> */}
-              <span>Send Message </span>
+              <span>Send Message</span>
             </button>
           </form>
         </section>

@@ -12,8 +12,8 @@ import rubyOnRailsIcon from "../../assets/images/frameworkImage/ruby-on-rails-ic
 import swiftUIIcon from "../../assets/images/frameworkImage/swiftui-icon.svg";
 export default function Framework() {
   return (
-    <section class="skill">
-      <h3 class="h3 skills-title">Framework </h3>
+    <section className="skill">
+      <h3 className="h3 skills-title">Framework </h3>
       <img
         src={reactIcon}
         alt="react"

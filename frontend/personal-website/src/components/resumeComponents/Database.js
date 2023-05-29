@@ -7,8 +7,8 @@ export default function Database() {
   return (
     <div>
       {" "}
-      <section class="skill">
-        <h3 class="h3 skills-title">Database </h3>
+      <section className="skill">
+        <h3 className="h3 skills-title">Database </h3>
         <img
           src={mongoDBIcon}
           alt="mongoDB"

@@ -18,7 +18,6 @@ import ResumeDownloadPage from "./components/ResumeDownloadPage";
 function App() {
   return (
     <>
-      {/* <NavBar /> */}
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>

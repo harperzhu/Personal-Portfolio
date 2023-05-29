@@ -4,22 +4,22 @@ export default function Education() {
   return (
     <div>
       {" "}
-      <section class="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box">
+      <section className="timeline">
+        <div className="title-wrapper">
+          <div className="icon-box">
             <ion-icon name="book-outline"></ion-icon>
           </div>
 
-          <h3 class="h3">Education</h3>
+          <h3 className="h3">Education</h3>
         </div>
 
-        <ol class="timeline-list">
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Cornell University</h4>
+        <ol className="timeline-list">
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">Cornell University</h4>
 
             <span>08/2022 — 06/2024 </span>
 
-            <p class="timeline-text">
+            <p className="timeline-text">
               Dual M.S in Information Systems & Applied Information Science
               <br />
               Core Courses: Applied Machine Learning, Security and Privacy In
@@ -27,12 +27,14 @@ export default function Education() {
             </p>
           </li>
 
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">University of Washington </h4>
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              University of Washington{" "}
+            </h4>
 
             <span>09/2017 - 03/2022 </span>
 
-            <p class="timeline-text">
+            <p className="timeline-text">
               Bachelor of Art in Biochemistry, International Studies (Honors)
               <br />
               Teaching Assistant for Software Architecture
