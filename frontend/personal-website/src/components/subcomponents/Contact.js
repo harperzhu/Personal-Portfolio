@@ -11,10 +11,15 @@ export default function Contact() {
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const USER_ID = process.env.REACT_APP_USER_ID;
   console.log(USER_ID);
+  emailjs.init(process.env.REACT_APP_PUBLIC_KEY);
+
+  const formRef = useRef(null);
 
   const goForward = (e) => {
     e.preventDefault();
-    if (document.querySelector("form").checkValidity()) {
+    sendEmail(); // Trigger the sendEmail function
+
+    if (formRef.current.checkValidity()) {
       navigate("/contact/messagereceived");
     } else {
       // Handle form validation errors
@@ -41,9 +46,6 @@ export default function Contact() {
     validateEmail(e.target.value);
   }
 
-  const formRef = useRef(null);
-  const cleanupPerformedRef = useRef(false);
-
   useEffect(() => {
     const formElement = formRef.current;
 
@@ -55,22 +57,13 @@ export default function Contact() {
     formElement.addEventListener("submit", handleFormSubmit);
 
     return () => {
-      if (!cleanupPerformedRef.current) {
-        // Cleanup: remove the event listener
-        formElement.removeEventListener("submit", handleFormSubmit);
-        cleanupPerformedRef.current = true;
-      }
+      // Cleanup: remove the event listener
+      formElement.removeEventListener("submit", handleFormSubmit);
     };
   }, []);
-  // useEffect(() => {
-  //   const generator = () => {
-  //     emailjs.init(); // please encrypt your user id to protect against malicious attacks
-  //   };
 
-  //   generator();
-  // }, []);
   const sendEmail = () => {
-    console.log("hey ok i am here");
+    console.log("Sending email...");
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
       function (response) {
@@ -82,19 +75,6 @@ export default function Contact() {
       }
     );
   };
-
-  useEffect(() => {
-    const formElement = formRef.current;
-    document.body.appendChild(formElement);
-
-    return () => {
-      if (!cleanupPerformedRef.current) {
-        // Cleanup: remove the form from the body
-        document.body.removeChild(formElement);
-        cleanupPerformedRef.current = true;
-      }
-    };
-  }, []);
 
   return (
     <div className="overall-container">
@@ -119,7 +99,7 @@ export default function Contact() {
         <section className="contact-form">
           <h3 className="h3 form-title">Contact Form</h3>
 
-          <form className="form" ref={formRef}>
+          <form ref={formRef} action="#" className="form" data-form="true">
             <div className="input-wrapper">
               <input
                 type="text"
