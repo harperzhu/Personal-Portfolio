@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SkillBar() {
   return (
-    <section className="skill">
+    <section className="skill animate-skill-bars">
       <h3 className="h3 skills-title">My skills</h3>
 
       <ul>

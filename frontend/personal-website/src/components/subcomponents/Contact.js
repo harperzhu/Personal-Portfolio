@@ -10,8 +10,8 @@ export default function Contact() {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const USER_ID = process.env.REACT_APP_USER_ID;
+  emailjs.init(process.env.REACT_APP_USER_ID);
   console.log(USER_ID);
-  emailjs.init(process.env.REACT_APP_PUBLIC_KEY);
 
   const formRef = useRef(null);
 
@@ -71,6 +71,7 @@ export default function Contact() {
         navigate("/contact/messagereceived");
       },
       function (error) {
+        console.log("i am user_id", USER_ID);
         console.log("FAILED...", error);
       }
     );

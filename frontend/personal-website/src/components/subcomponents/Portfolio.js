@@ -76,12 +76,16 @@ export default function Portfolio() {
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src={portfolio_picture_1} alt="finance" loading="lazy" />
+                  <img
+                    src={portfolio_picture_1}
+                    alt="Statistical modeling project"
+                    loading="lazy"
+                  />
                 </figure>
 
-                <h3 className="project-title">Finance</h3>
+                <h3 className="project-title">Can't I just go to one party?</h3>
 
-                <p className="project-category">Web development</p>
+                <p className="project-category">Data Science</p>
               </a>
             </li>
 
@@ -110,20 +114,17 @@ export default function Portfolio() {
             <li
               className="project-item  active"
               data-filter-item
-              data-category="web design"
+              data-category="Web development"
             >
               <a href="https://feedme-97f21.web.app/">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src={portfolio_picture_2} alt="finance" loading="lazy" />
                 </figure>
-
-                <h3 className="project-title">Fundo</h3>
-
-                <p className="project-category">Web design</p>
+                <h3 className="project-title">FeedMe</h3>
+                <p className="project-category">Web development</p>
               </a>
             </li>
           </ul>

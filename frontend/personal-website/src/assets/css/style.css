@@ -1505,7 +1505,9 @@ textarea.form-input::-webkit-resizer {
   .navbar-link {
     --fs-8: 14px;
   }
-
+  .navbar-link.active {
+    color: #ffdb70;
+  }
   /**
      * #ABOUT
      */

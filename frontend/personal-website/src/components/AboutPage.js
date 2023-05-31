@@ -3,10 +3,24 @@ import designIcon from "../assets/images/skillIcon/icon-design.svg";
 import appIcon from "../assets/images/skillIcon/icon-app.svg";
 import photoIcon from "../assets/images/skillIcon/icon-photo.svg";
 import devIcon from "../assets/images/skillIcon/icon-dev.svg";
+import Typewriter from "typewriter-effect";
+import { useRef, useEffect } from "react";
 
 import NavBar from "./NavBar";
 
 export default function AboutPage() {
+  const typewriterRef = useRef(null);
+  let description = `
+  I am a software engineer with 2 years of professional experience,
+  working with Handshake and leading startups to build and deploy
+  applications for production systems. Leveraging my skills in
+  scalable application development, I have expertise in building
+  scalable systems and backend applications. With a deep passion for
+  understanding user needs and spearheading end-to-end website
+  initiatives, I am eager to explore both software engineering and
+  product management to drive comprehensive solutions.
+  `;
+
   return (
     <div className="overall-container">
       <>
@@ -17,6 +31,15 @@ export default function AboutPage() {
           </header>
 
           <section className="about-text">
+            {/* <div ref={typewriterRef} /> */}
+            <Typewriter
+              options={{
+                strings: description,
+                autoStart: true,
+                loop: false,
+                pauseFor: 1,
+              }}
+            />
             <p>
               I am a software engineer with 2 years of professional experience,
               working with Handshake and leading startups to build and deploy
@@ -28,7 +51,6 @@ export default function AboutPage() {
               both software engineering and product management to drive
               comprehensive solutions.
             </p>
-
             <p>
               Currently, I am pursuing my Master's degree in Information Science
               at Cornell Tech, where I am immersed in cutting-edge research and
