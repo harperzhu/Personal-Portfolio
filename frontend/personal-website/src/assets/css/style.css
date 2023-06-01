@@ -930,6 +930,10 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
+  height: 10px;
+  border-radius: 1rem;
+  transition: 1s ease;
+  transition-delay: 1s;
 }
 
 /*-----------------------------------*\
@@ -1505,6 +1509,7 @@ textarea.form-input::-webkit-resizer {
   .navbar-link {
     --fs-8: 14px;
   }
+
   .navbar-link.active {
     color: #ffdb70;
   }
