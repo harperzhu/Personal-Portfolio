@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function SkillBar() {
   const [values, setValues] = useState([]);
+  const skillBarRef = useRef(null);
 
   let skillPercentDic = {
     JavaScript: 60,
@@ -14,12 +15,29 @@ export default function SkillBar() {
   let skillPercent = Object.values(skillPercentDic);
 
   useEffect(() => {
-    const newValues = skillPercent.map((percent) => percent * 2); // Adjust the multiplier to make the bars shorter
-    setValues(newValues);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const newValues = skillPercent.map((percent) => percent * 2); // Adjust the multiplier to make the bars shorter
+          setValues(newValues);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    if (skillBarRef.current) {
+      observer.observe(skillBarRef.current);
+    }
+
+    return () => {
+      if (skillBarRef.current) {
+        observer.unobserve(skillBarRef.current);
+      }
+    };
   }, [skillPercent]);
 
   return (
-    <section className="skill animate-skill-bars">
+    <section className="skill animate-skill-bars" ref={skillBarRef}>
       <h3 className="h3 skills-title">My skills</h3>
 
       <ul>
