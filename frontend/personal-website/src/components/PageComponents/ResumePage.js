@@ -1,28 +1,25 @@
 import React from "react";
-import SideBar from "./SideBar";
-import Portfolio from "./subcomponents/Portfolio";
-//*TODO: fix the styling here */
+import SideBar from "../ShareComponents/SideBar";
+import Resume from "../subcomponents/Resume";
 
-export default function PortfolioPage() {
+export default function ResumePage() {
   return (
-    // <body>
     <div className="overall-container">
       <main>
         <SideBar />
-        <Portfolio />
+        <Resume />
       </main>
 
-      <script src="./assets/js/script.js"></script>
+      {/* <script src="./assets/js/script.js"></script>
 
       <script
         type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
       ></script>
       <script
-        noModule
+        nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
+      ></script> */}
     </div>
-    // </body>
   );
 }

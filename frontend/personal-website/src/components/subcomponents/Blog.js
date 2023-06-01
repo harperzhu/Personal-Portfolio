@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar";
+import NavBar from "../ShareComponents/NavBar";
 import catImage from "../../assets/images/blogImage/cat.gif";
 
 export default function Blog() {

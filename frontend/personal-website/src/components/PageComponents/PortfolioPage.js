@@ -1,18 +1,16 @@
 import React from "react";
-import SideBar from "./SideBar";
-import Blog from "./subcomponents/Blog";
+import SideBar from "../ShareComponents/SideBar";
+import Portfolio from "../subcomponents/Portfolio";
+//*TODO: fix the styling here */
 
-export default function BlogPage() {
+export default function PortfolioPage() {
   return (
+    // <body>
     <div className="overall-container">
-      {/* <div className="content-container"> */}
-
       <main>
         <SideBar />
-        <Blog />
+        <Portfolio />
       </main>
-
-      {/* </div> */}
 
       <script src="./assets/js/script.js"></script>
 
@@ -25,5 +23,6 @@ export default function BlogPage() {
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ></script>
     </div>
+    // </body>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 // import SideBar from "../SideBar";
-import NavBar from "../NavBar";
+import NavBar from "../ShareComponents/NavBar";
 import { useNavigate } from "react-router-dom";
 import SkillBar from "../resumeComponents/SkillBar";
 import Framework from "../resumeComponents/Framework";

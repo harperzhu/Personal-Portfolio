@@ -1,5 +1,5 @@
 import React from "react";
-import SideBar from "./SideBar";
+import SideBar from "../ShareComponents/SideBar";
 import AboutPage from "./AboutPage";
 
 //TODO: Fix the mobile view of the about page

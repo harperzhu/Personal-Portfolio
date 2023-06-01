@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import NavBar from "../NavBar";
+import NavBar from "../ShareComponents/NavBar";
 import { useNavigate } from "react-router-dom";
 import emailjs from "emailjs-com";
 

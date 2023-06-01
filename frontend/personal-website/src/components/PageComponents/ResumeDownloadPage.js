@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import SideBar from "./SideBar";
-import NavBar from "./NavBar";
-import cat_high_five_gif from "../assets/images/resumeDownloadImage/cat-high-five.gif";
+import SideBar from "../ShareComponents/SideBar";
+import NavBar from "../ShareComponents/NavBar";
+import cat_high_five_gif from "../../assets/images/resumeDownloadImage/cat-high-five.gif";
 
 export default function ResumeDownloadPage() {
   const navigate = useNavigate();

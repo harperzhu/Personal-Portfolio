@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import NavBar from "../NavBar";
+import NavBar from "../ShareComponents/NavBar";
 import cat_hat_off from "../../assets/images/messageReceivedImage/cat-hat-off.gif";
 
 export default function MessageReceived() {

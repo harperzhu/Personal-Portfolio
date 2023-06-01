@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar";
+import NavBar from "../ShareComponents/NavBar";
 import portfolio_picture_1 from "../../assets/images/projectImage/portfolio-pic-1.jpg";
 import portfolio_picture_2 from "../../assets/images/projectImage/portfolio-pic-2.png";
 /* TODO: fix the sorting and data label for each project here */

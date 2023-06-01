@@ -1,6 +1,6 @@
 import React from "react";
-import SideBar from "./SideBar";
-import Contact from "./subcomponents/Contact";
+import SideBar from "../ShareComponents/SideBar";
+import Contact from "../subcomponents/Contact";
 
 /*TODO: whenever someone click submit, auto send something to my email */
 

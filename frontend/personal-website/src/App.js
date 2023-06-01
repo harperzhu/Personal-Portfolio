@@ -2,18 +2,18 @@
 import { Routes, Route } from "react-router-dom";
 // import React, { useState } from "react";
 import "./App.css";
-import HomePage from "./components/HomePage";
+import HomePage from "./components/PageComponents/HomePage";
 // import Blog from "./components/Blog";
 // import Portfolio from "./components/Portfolio";
-import ResumePage from "./components/ResumePage";
-import BlogPage from "./components/BlogPage";
+import ResumePage from "./components/PageComponents/ResumePage";
+import BlogPage from "./components/PageComponents/BlogPage";
 import "../src/assets/css/style.css";
 // import NavBar from "./components/NavBar";
-import ErrorPage from "./components/ErrorPage";
-import PortfolioPage from "./components/PortfolioPage";
-import ContactPage from "./components/ContactPage";
-import MessageReceivePage from "./components/MessageReceivedPage";
-import ResumeDownloadPage from "./components/ResumeDownloadPage";
+import ErrorPage from "./components/PageComponents/ErrorPage";
+import PortfolioPage from "./components/PageComponents/PortfolioPage";
+import ContactPage from "./components/PageComponents/ContactPage";
+import MessageReceivePage from "./components/PageComponents/MessageReceivedPage";
+import ResumeDownloadPage from "./components/PageComponents/ResumeDownloadPage";
 
 function App() {
   return (
