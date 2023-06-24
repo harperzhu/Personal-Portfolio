@@ -2059,7 +2059,7 @@ html,
 .initialPage body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   font-family: "Roboto" !important;
   color: white;
   font-size: 9px;

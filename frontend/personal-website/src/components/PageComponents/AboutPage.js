@@ -3,13 +3,10 @@ import designIcon from "../../assets/images/skillIcon/icon-design.svg";
 import appIcon from "../../assets/images/skillIcon/icon-app.svg";
 import photoIcon from "../../assets/images/skillIcon/icon-photo.svg";
 import devIcon from "../../assets/images/skillIcon/icon-dev.svg";
-import { useNavigate } from "react-router-dom";
 
 import NavBar from "../ShareComponents/NavBar";
 
 export default function AboutPage() {
-  const navigate = useNavigate();
-
   return (
     <div className="overall-container">
       <>
