@@ -3,23 +3,12 @@ import designIcon from "../../assets/images/skillIcon/icon-design.svg";
 import appIcon from "../../assets/images/skillIcon/icon-app.svg";
 import photoIcon from "../../assets/images/skillIcon/icon-photo.svg";
 import devIcon from "../../assets/images/skillIcon/icon-dev.svg";
-import Typewriter from "typewriter-effect";
-import { useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import NavBar from "../ShareComponents/NavBar";
 
 export default function AboutPage() {
-  const typewriterRef = useRef(null);
-  let description = `
-  I am a software engineer with 2 years of professional experience,
-  working with Handshake and leading startups to build and deploy
-  applications for production systems. Leveraging my skills in
-  scalable application development, I have expertise in building
-  scalable systems and backend applications. With a deep passion for
-  understanding user needs and spearheading end-to-end website
-  initiatives, I am eager to explore both software engineering and
-  product management to drive comprehensive solutions.
-  `;
+  const navigate = useNavigate();
 
   return (
     <div className="overall-container">
@@ -31,15 +20,6 @@ export default function AboutPage() {
           </header>
 
           <section className="about-text">
-            {/* <div ref={typewriterRef} /> */}
-            <Typewriter
-              options={{
-                strings: description,
-                autoStart: true,
-                loop: false,
-                pauseFor: 1,
-              }}
-            />
             {/* <p>
               I am a software engineer with 2 years of professional experience,
               working with Handshake and leading startups to build and deploy
@@ -52,9 +32,30 @@ export default function AboutPage() {
               comprehensive solutions.
             </p> */}
             <p>
-              Currently, I am pursuing my Master's degree in Information Science
-              at Cornell Tech, where I am immersed in cutting-edge research and
-              acquiring knowledge about the latest advancements in the field.
+              I am a software engineer with 1+ years of professional experience,
+              working with leading startups to build and deploy applications for
+              production systems. With expertise in building scalable systems
+              and backend applications, leveraging technologies, and a deep
+              passion for understanding user needs and spearheading end-to-end
+              development initiatives,
+            </p>
+            <p>
+              I am currently seeking full-time opportunities in full-stack and
+              backend software engineering. Additionally, I am interested in
+              exploring roles in product management to utilize my skills further
+              and contribute to the success of companies in driving
+              comprehensive solutions.
+            </p>
+            <p>
+              I will be graduating in 05/2024, and I am excited to utilize my
+              skills in driving comprehensive solutions and contributing to the
+              success of companies in these roles. Please don't hesitate to
+              reach out if you have any opportunities by sending me an email
+              &thinsp;
+              <a href="/contact" style={{ display: "inline" }}>
+                here
+              </a>
+              .
             </p>
           </section>
 

@@ -14,11 +14,13 @@ import PortfolioPage from "./components/PageComponents/PortfolioPage";
 import ContactPage from "./components/PageComponents/ContactPage";
 import MessageReceivePage from "./components/PageComponents/MessageReceivedPage";
 import ResumeDownloadPage from "./components/PageComponents/ResumeDownloadPage";
+import LoadingScreen from "./components/PageComponents/LoadingScreenPage";
 
 function App() {
   return (
     <>
       <Routes>
+        <Route path="/loadingScreen" element={<LoadingScreen />}></Route>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
         <Route
