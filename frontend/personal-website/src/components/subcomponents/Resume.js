@@ -8,6 +8,7 @@ import Database from "../resumeComponents/Database";
 import Education from "../resumeComponents/Education";
 import ProfessionExperience from "../resumeComponents/ProfessionExperience";
 import Projects from "../resumeComponents/Projects";
+import Volunteer from "../resumeComponents/Volunteer";
 
 export default function Resume() {
   const navigate = useNavigate();
@@ -22,13 +23,18 @@ export default function Resume() {
     <>
       <div className="overall-container">
         <NavBar />
+
         <article className="about  active" data-page="about">
           <header>
             <h2 className="h2 article-title">Resume</h2>
           </header>
+          <button className="resume-button form-btn" onClick={downloadResume}>
+            Download Resume
+          </button>
           <Education />
           <ProfessionExperience />
           <Projects />
+          {/* <Volunteer /> */}
           <div className="skills-list content-card">
             <SkillBar />
             <br></br>
@@ -42,9 +48,6 @@ export default function Resume() {
           <section className="resume-download">
             <br></br>
             <br></br>
-            <button className="resume-button form-btn" onClick={downloadResume}>
-              Download Resume
-            </button>
           </section>
         </article>
       </div>

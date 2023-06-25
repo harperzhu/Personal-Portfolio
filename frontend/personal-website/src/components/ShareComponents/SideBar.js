@@ -38,11 +38,11 @@ export default function SideBar() {
                 <p className="contact-title">Email</p>
 
                 <a href="mailto:harperzhu99@gmail.com" className="contact-link">
-                  harperzhu99@gmail.com
+                  rz386@cornell.edu{" "}
                 </a>
               </div>
             </li>
-
+            {/* 
             <li className="contact-item">
               <div className="icon-box">
                 <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -55,7 +55,7 @@ export default function SideBar() {
                   +1 (206) 697-8163
                 </a>
               </div>
-            </li>
+            </li> */}
 
             <li className="contact-item">
               <div className="icon-box">

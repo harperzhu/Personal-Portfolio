@@ -11,10 +11,6 @@ export default function ResumeDownloadPage() {
     navigate("/");
   };
 
-  //   const goToDownload = () => {
-  //     <Link to={user.id}></Link>
-  //   };
-
   return (
     <main>
       <SideBar />

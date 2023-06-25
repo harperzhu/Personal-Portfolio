@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Projects() {
+export default function Volunteer() {
   return (
     <div>
       {" "}
@@ -10,48 +10,61 @@ export default function Projects() {
             <ion-icon name="book-outline"></ion-icon>
           </div>
 
-          <h3 className="h3">Personal Projects</h3>
+          <h3 className="h3">Volunteer Experience</h3>
         </div>
 
         <ol className="timeline-list">
           {/* New Project */}
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Check-In Kiosk
+              Strategy Consultant
               <br />
-              <em className="introduction-line">
-                {" "}
-                Full-stack interactive web application for student check-ins
-              </em>
+              <em className="introduction-line">Hi5 Dog Rescue</em>
             </h4>
-            <span>April 2023 - May 2023</span>
+            <span>May 2023 - Present · 2 mos</span>
             <ul>
               <li className="resume">
                 <p className="timeline-text">
                   <ul style={{ paddingLeft: "20px" }}>
                     <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
-                      Developed a prototype for a full-stack interactive web
-                      application for students to check in for career fairs and
-                      school events
+                      Coordinate international rescue and facilitate the safe
+                      transportation and adoption of pets, including disabled,
+                      abused, or strayed pets.
                     </li>
                     <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
-                      Implemented frontend with React and built backend with
-                      Express and Node.js
+                      Work closely with a team of volunteers and animal rescue
+                      organizations to organize and manage logistics.
                     </li>
                     <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
-                      Updated students' data with MongoDB
+                      Liaise with airlines to secure transportation arrangements
+                      for the animals.
                     </li>
                     <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
-                      Hosted the application through AWS Elastic Beanstalk
+                      Ensure all necessary paperwork and documentation are
+                      prepared and in order.
                     </li>
                     <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
-                      Implemented user authentication using Firebase Auth API
+                      Arrange for proper care and handling of the animals
+                      throughout the journey.
+                    </li>
+                    <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
+                      Provide guidance and support to flight volunteers,
+                      equipping them with information and resources.
+                    </li>
+                    <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
+                      Ensure the well-being and safety of the animals during the
+                      flight.
+                    </li>
+                    <li style={{ listStyleType: "disc", marginBottom: "8px" }}>
+                      Contribute to promoting animal welfare on an international
+                      scale.
                     </li>
                   </ul>
                 </p>
               </li>
             </ul>
           </li>
+
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
               {" "}
