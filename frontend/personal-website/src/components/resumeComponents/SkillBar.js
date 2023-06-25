@@ -8,6 +8,7 @@ export default function SkillBar() {
     JavaScript: 60,
     Python: 60,
     JAVA: 50,
+    Ruby: 50,
     C: 50,
     R: 30,
   };
