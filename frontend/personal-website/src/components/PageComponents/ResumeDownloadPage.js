@@ -36,7 +36,7 @@ export default function ResumeDownloadPage() {
               className="error-button extra-small-button"
             >
               <a
-                href="https://drive.google.com/uc?export=download&id=1afC3oW_-AohjKp9KrEqWayemyZ06hPYV"
+                href="https://drive.google.com/uc?export=download&id=1MdB-TSI1SVleuLmagmjwkjHkKvkmjcXt"
                 download
                 className="resume-download-link"
                 style={{ fontSize: "1.2rem", color: "#FFDB70" }}

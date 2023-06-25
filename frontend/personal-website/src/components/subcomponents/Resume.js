@@ -15,8 +15,10 @@ export default function Resume() {
 
   const downloadResume = () => {
     // Replace the URL with the actual file path of your resume
-    const resumeUrl = "/resume/download";
-    navigate(resumeUrl);
+    const resumeUrl =
+      "https://drive.google.com/uc?export=download&id=1MdB-TSI1SVleuLmagmjwkjHkKvkmjcXt";
+    window.location.href = resumeUrl;
+    navigate("/resume/download");
   };
 
   return (
@@ -30,6 +32,12 @@ export default function Resume() {
           </header>
           <button className="resume-button form-btn" onClick={downloadResume}>
             Download Resume
+            {/* <a
+                
+                download
+                className="resume-download-link"
+                style={{ fontSize: "1.2rem", color: "#FFDB70" }}
+              > */}
           </button>
           <Education />
           <ProfessionExperience />
