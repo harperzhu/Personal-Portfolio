@@ -7,12 +7,11 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const navigate = useNavigate();
+  emailjs.init(process.env.REACT_APP_USER_ID);
+
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const USER_ID = process.env.REACT_APP_USER_ID;
-  emailjs.init(process.env.REACT_APP_USER_ID);
-  console.log(USER_ID);
-
   const formRef = useRef(null);
 
   const goForward = (e) => {
