@@ -66,6 +66,10 @@ export default function Contact() {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
       function (response) {
+        console.log(process.env.REACT_APP_USER_ID === "9rzM-C9RDNhZeOtvV");
+        console.log(process.env.REACT_APP_USER_ID == "9rzM-C9RDNhZeOtvV");
+        console.log(process.env.REACT_APP_USER_ID);
+        console.log("9rzM-C9RDNhZeOtvV");
         console.log("SUCCESS!", response.status, response.text);
         navigate("/contact/messagereceived");
       },
